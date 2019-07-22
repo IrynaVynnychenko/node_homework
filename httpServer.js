@@ -44,18 +44,16 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, { "Content-Type": "text/javascript" });
             res.end(mainJS);
             break;
-        case '/blog.html':
+        case '/blog':
             res.writeHead(200, { "Content-Type": "text/html" });
             res.end(blog);
         case '/':
             res.writeHead(200, { "Content-Type": "text/html" });
             res.end(htmlFile);
-        case '/about.html':
+        case '/about':
             res.writeHead(200, { "Content-Type": "text/html" });
             res.end(about);
-        case '/index.html':
-            res.writeHead(200, { "Content-Type": "text/html" });
-            res.end(htmlFile);
+
         default:
             res.writeHead(404, { "Content-Type": "text/html" });
             res.end(page404);
