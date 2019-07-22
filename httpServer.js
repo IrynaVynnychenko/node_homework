@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
     fs.readFile('./folder/main.css', 'utf-8', function(err, neponyatno) {
         mainCss = neponyatno;
     });
-    fs.readFile('./folder/404.html', 'utf-8', function(err, data) {
+    fs.readFile('./folder/page404.html', 'utf-8', function(err, data) {
         page404 = data;
     });
 
